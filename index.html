@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin tiểu sử và khảo sát</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="https://chamsockhachang.com/wp-content/uploads/hoc-vien-buu-chinh-vien-thong.jpg" />
+    <div class="container">
+        <h1 class="title">Thông tin tiểu sử</h1>
+        <form id="surveyForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="fullName">Họ và tên:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Ngày tháng năm sinh:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="cccd">CCCD:</label>
+                <input type="text" id="cccd" name="cccd" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Địa chỉ thường trú:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="submit">
+                <button type="submit">Gửi thông tin</button>
+            </div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
